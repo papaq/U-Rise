@@ -45,7 +45,7 @@ public final class Lecture3 {
                         "%1$.2f in %2$.2f power is less than %3$.2f\n",
                         op1, op2, comparer).toString()
                 : formatter.format(
-                        "%1$.2f in %2$.2f power is grater than %3$.2f\n",
+                        "%1$.2f in %2$.2f power is not less than %3$.2f\n",
                         op1, op2, comparer).toString();
     }
 
@@ -54,8 +54,10 @@ public final class Lecture3 {
         boolean op2 = (Object) op1 instanceof Boolean;
         System.out.format("op1 = %1$b\n", op1);
         System.out.format("!op1 = %1$b\n", !op1);
-        System.out.format("(op1 == true && instanceof(op1) == boolean) = %1$b\n",
-                op1 && op2);
+        System.out.format(
+                "(op1 == true && instanceof(op1) == boolean) = %1$b\n",
+                op1 && op2
+        );
     }
 
     public static void Test4(Object testNumber) {
@@ -92,8 +94,7 @@ public final class Lecture3 {
     public static void Test6(){
         int i = 1;
         while (i < 11) {
-            System.out.format("%1$d\n", i);
-            i++;
+            System.out.format("%1$d\n", i++);
         }
     }
 }

@@ -21,7 +21,7 @@ public final class Lecture1 {
         String myStringValue = "Hello U-Rise!";
         boolean myBoolValue = true;
         char myCharValue = '\\';
-        short myShortValue = 126;
+        short myShortValue = 128;
         int myIntValue = myShortValue * 8;
         long myLongValue = 1500L;
         float myFloatValue = 5.6F;

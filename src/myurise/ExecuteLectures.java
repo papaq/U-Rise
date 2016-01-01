@@ -233,7 +233,7 @@ public final class ExecuteLectures {
                 : "\nhas no roots")
         );
                 
-        PrintTaskTitle(13);
+        PrintTaskTitle(13); 
         System.out.println(
                 (DifferentTasks.CheckIfOneIsEven(solution)
                     ? "At least one of the roots above is even"
@@ -254,6 +254,5 @@ public final class ExecuteLectures {
     public static void Lecture5() {
         PrintLectureTitle(5);
     }
-    
-    
+        
 }

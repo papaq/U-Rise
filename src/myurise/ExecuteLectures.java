@@ -234,7 +234,6 @@ public final class ExecuteLectures {
         );
                 
         PrintTaskTitle(13);
-        
         System.out.println(
                 (DifferentTasks.CheckIfOneIsEven(solution)
                     ? "At least one of the roots above is even"

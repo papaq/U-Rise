@@ -5,6 +5,8 @@
  */
 package myurise;
 
+//import java.util.Arrays;
+
 /**
  *
  * @author yural
@@ -18,7 +20,9 @@ public class MainHall {
         //ExecuteLectures.Lecture1();
         //ExecuteLectures.Lecture2();
         //ExecuteLectures.Lecture3();
+        
         ExecuteLectures.Lecture4();
+        ExecuteLectures.DiffTasksP1();
     }
 
 }

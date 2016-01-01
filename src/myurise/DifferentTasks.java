@@ -25,18 +25,26 @@ public final class DifferentTasks {
         return (47 < (int)symbol && (int)symbol < 58);
     }
     
+    // Task 2
+    public static boolean _CheckIfCharIsDigit(char symbol) {
+        return ('0' < symbol && symbol < '9');
+    }
+    
+    private static boolean CheckIfTriangleExists(int a, int b, int c) {
+        return (c < a + b && b < a + c && a < c + b);
+    }
+    
     // Task 3
     public static boolean CheckIfRightTriangle(int a, int b, int c) {
-        return (0 == a*a + b*b - c*c 
+        return CheckIfTriangleExists(a, b, c) 
+                && (0 == a*a + b*b - c*c 
                 || 0 == a*a + c*c - b*b
                 || 0 == b*b + c*c - a*a);            
     }
     
     // Task 4
     public static boolean CheckIfIsoscelesTriangle(int a, int b, int c) {
-        return ((a == b && c < a + b) 
-                || (a == c && b < a + c)
-                || (c == b && a < c + b));            
+        return CheckIfTriangleExists(a, b, c) && (a == b || a == c || c == b);            
     }
     
     // Task 5

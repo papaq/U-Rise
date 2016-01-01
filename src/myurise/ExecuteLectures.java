@@ -118,7 +118,7 @@ public final class ExecuteLectures {
         
         PrintTaskTitle(2);
         System.out.println("'5' is " 
-                + (DifferentTasks.CheckIfCharIsDigit('5') 
+                + (DifferentTasks._CheckIfCharIsDigit('5') 
                         ? "a digit"
                         : "not a digit")
         );

@@ -29,7 +29,7 @@ public final class Lecture3 {
                     op1, op2, comparer).toString();
         } else {
             return formatter.format(
-                    "%1$.2f in %2$.2f power is grater than %3$.2f\n",
+                    "%1$.2f in %2$.2f power is not less than %3$.2f\n",
                     op1, op2, comparer).toString();
         }
     }

@@ -23,6 +23,7 @@ public class MainHall {
         
         ExecuteLectures.Lecture4();
         ExecuteLectures.DiffTasksP1();
+        
     }
 
 }

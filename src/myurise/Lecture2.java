@@ -16,7 +16,7 @@ public final class Lecture2 {
     
     public static void Test1() {
         int op1 = 90;
-        int op2 = 29;
+        int op2 = 28;
         System.out.format("op1 = %1$d\n", op1);
         System.out.format("op2 = %1$d\n", op2);
         System.out.format("op1 + op2 = %1$d\n", op1 + op2);

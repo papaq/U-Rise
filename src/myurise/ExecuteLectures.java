@@ -236,7 +236,7 @@ public final class ExecuteLectures {
         PrintTaskTitle(13);
         
         System.out.println(
-                (solution != null && (0 == solution[0]%2 || 0 == solution[1]%2)
+                (DifferentTasks.CheckIfOneIsEven(solution)
                     ? "At least one of the roots above is even"
                     : "No root is even")
         );

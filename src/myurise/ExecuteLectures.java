@@ -153,14 +153,14 @@ public final class ExecuteLectures {
                 + "\na = " + a
                 + "\nb = " + b
                 + "\nc = " + a
-                + "\nd = " + a
-                + "\ne = " + a
+                + "\nd = " + b
+                + "\ne = " + b
                 + "\nf = " + a
                 + "\nare " 
                 + (DifferentTasks.CheckIfBothEquilateralEqualTriangles(
-                        a, b, a, a, a, a) 
-                        ? "equal and equilateral"
-                        : "not equal and equilateral")
+                        new int[] {a, b, a, b, b, a}) 
+                        ? "equilateral"
+                        : "not equilateral")
         );
         
         PrintTaskTitle(6);

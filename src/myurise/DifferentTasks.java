@@ -5,6 +5,8 @@
  */
 package myurise;
 
+import java.util.Arrays;
+
 /**
  *
  * @author yural
@@ -31,7 +33,7 @@ public final class DifferentTasks {
     }
     
     private static boolean CheckIfTriangleExists(int a, int b, int c) {
-        return (c < a + b && b < a + c && a < c + b);
+        return (c < a + b && b < a + c && a < c + b && a > 0 && b > 0 && c > 0);
     }
     
     // Task 3
@@ -47,10 +49,15 @@ public final class DifferentTasks {
         return CheckIfTriangleExists(a, b, c) && (a == b || a == c || c == b);            
     }
     
+    private static boolean CheckIfEquilateral(int a, int b, int c) {
+        return (a == b && b == c && a > 0);
+    }
+    
     // Task 5
-    public static boolean CheckIfBothEquilateralEqualTriangles(
-            int a, int b, int c, int d, int e, int f) {
-        return (a == b && a == c && a == d && a == e && a == f);
+    public static boolean CheckIfBothEquilateralEqualTriangles(int [] sides) {
+        Arrays.sort(sides);
+        return (CheckIfEquilateral(sides[0], sides[1], sides[2])
+                && CheckIfEquilateral(sides[3], sides[4], sides[5]));
     }
     
     // Task 6
@@ -139,7 +146,7 @@ public final class DifferentTasks {
     // Task 14
     public static boolean CheckIfStringIsNumber(String str) {
         for (int i = 0; i < str.length(); i++) {
-            if (!CheckIfCharIsDigit(str.charAt(i))) {
+            if (!_CheckIfCharIsDigit(str.charAt(i))) {
                 return false;
             }
         }
